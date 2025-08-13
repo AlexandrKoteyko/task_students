@@ -1,6 +1,3 @@
-from django.urls import path, include
-from django.contrib import admin
-from django.conf import settings
 from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse_lazy
 from tasks import models

@@ -23,6 +23,6 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('task.urls')),
-    path("accounts/login/", auth_views.LoginView.as_view(), name="login"),
+    path("", include("tasks.urls")),
+    path("accounts/login/", auth_views.LoginView.as_view(), name="login")
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
